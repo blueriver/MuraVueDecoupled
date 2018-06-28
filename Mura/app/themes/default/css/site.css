@@ -1,0 +1,178 @@
+/* CALENDAR
+===================================== */
+.mura-calendar {
+  text-align: center; }
+  .mura-calendar table thead {
+    background: #e9ecef; }
+    .mura-calendar table thead th, .mura-calendar table thead th a {
+      line-height: 1.5;
+      padding: .5em;
+      text-align: center; }
+  .mura-calendar table td, .mura-calendar table th {
+    border-collapse: collapse;
+    font-size: 12px; }
+  .mura-calendar table table #previousMonth a,
+  .mura-calendar table table #nextMonth a {
+    font-weight: normal;
+    font-size: 150%;
+    line-height: 1.1;
+    padding: 0; }
+  .mura-calendar table .table tbody tr:hover td,
+  .mura-calendar table .table tbody tr:hover th {
+    background: #fff; }
+
+.mura-calendar-nav th {
+  line-height: 1;
+  padding: 0; }
+  .mura-calendar-nav th a {
+    line-height: 1;
+    padding: 2px 2px 4px; }
+
+.mura-calendar-nav td {
+  padding: 5px 0; }
+
+.carousel-item {
+  max-height: 628px; }
+  .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .carousel-item a {
+    color: #fff; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.mura-comments > .mura-comment-sort-container,
+.mura-comments .mura-comment-more-comments-container {
+  margin-bottom: 1rem; }
+
+.mura-comments dl:last-child {
+  border-bottom: 0;
+  padding-bottom: 0; }
+
+.mura-comments dt > em {
+  font-weight: normal;
+  font-style: italic; }
+
+.mura-comments #mura-comment-post-comment legend {
+  border: 0; }
+
+.mura-comments dd.mura-comment-reply {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .mura-comments dd.mura-comment-reply:before {
+    margin-right: .25em;
+    color: #f00;
+    content: "\f112"; }
+
+.mura-comments dd.mura-comment-spam {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .mura-comments dd.mura-comment-spam:before {
+    margin-right: .25em;
+    color: #f00;
+    content: "\f05e"; }
+
+.navbar-nav .nav-item:hover > .dropdown-menu {
+  display: block; }
+
+.navbar-nav .nav-item .dropdown-menu {
+  margin: 0; }
+
+div[data-cssclass="home-news"] {
+  padding: 2em 0 0 0; }
+  div[data-cssclass="home-news"] .mura-object-meta {
+    text-align: center; }
+  div[data-cssclass="home-news"] .mura-collection-item .mura-item-content a:hover {
+    opacity: 0.8; }
+  div[data-cssclass="home-news"] .mura-collection-item .mura-item-meta div[class^="mura-item-meta_"] {
+    margin: 1em 0 0 0; }
+  div[data-cssclass="home-news"] .mura-collection-item .mura-item-meta .mura-item-meta__date {
+    color: #6c757d; }
+  div[data-cssclass="home-news"] .mura-collection-item .mura-item-meta .mura-item-meta__credits {
+    color: #6c757d; }
+
+.mura-nav .active {
+  color: #343a40; }
+
+.mura-index {
+  padding-top: 0;
+  border-top: 0;
+  margin-top: 0; }
+  .mura-index dl {
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 12px;
+    margin: 0 0 12px;
+    width: 100%; }
+  .mura-index .comments {
+    font-size: 0.875rem; }
+  .mura-index .credits {
+    font-size: 0.875rem; }
+  .mura-index .releaseDate {
+    font-size: 0.875rem; }
+  .mura-index .tags {
+    font-size: 0.875rem; }
+  .mura-index .title {
+    font-size: 1.75rem; }
+
+.mura-search-results__matches p {
+  margin-bottom: 0; }
+
+.moreResults {
+  border-radius: 6px; }
+  .moreResults dt {
+    font-size: 12px;
+    font-weight: normal; }
+  .moreResults > p {
+    margin: 0.5em 0; }
+  .moreResults > ul {
+    whitespace: nowrap; }
+    .moreResults > ul > li {
+      display: inline-block; }
+      .moreResults > ul > li > a:hover {
+        background-color: #e9ecef;
+        color: #fff; }
+  .moreResults > ul.pager {
+    margin: 0; }
+
+.bg-black {
+  background-color: #000 !important; }
+
+.mura-region::after,
+.mura-region-inherited::after,
+.mura-region-local::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.mura-index .releaseDate {
+  font-weight: normal;
+  margin: 0; }
+
+.mura-search-results .moreResults {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.mura-breadcrumb li {
+  display: list-item;
+  margin-right: 0; }
