@@ -15,7 +15,7 @@ You will first need to go to localhost:8888 to initialize Mura's install then lo
 
 The theme's contentRenderer.cfc's has this.hashURLs=true;
 
-You set the list of available templates by setting a contentRenderer.cfc this.layoutTemplates array. They should match the available /Vue/src/components/templates options
+You set the list of available templates by setting a contentRenderer.cfc this.templateArray array. They should match the available /Vue/src/components/templates options
 
 
 ### Mura Site Settings
