@@ -17,6 +17,8 @@ The theme's contentRenderer.cfc's has this.hashURLs=true;
 
 You set the list of available templates by setting a contentRenderer.cfc this.templateArray array. They should match the available /Vue/src/components/templates options
 
+Notice that the /Mura/themes/default/templates directory has been removed since that templating is taking place in Vue
+
 
 ### Mura Site Settings
 
