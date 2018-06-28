@@ -1,7 +1,7 @@
 <template>
 	<transition name="fade">
 	<div>
-	<h1>Headless Example Site</h1>
+	<h1>Decoupled Mura/VueJS Site</h1>
 	<div class="wrapper">
 		<div class="box header">
 			<h1>{{content.get('title')}}</h1>

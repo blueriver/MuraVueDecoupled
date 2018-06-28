@@ -68,7 +68,8 @@
 	<cfscript>
 
 		this.hashurls=true;
-		
+		this.templateArray=['Default'];
+
 		// GENERAL
 		this.deferMuraJS=true;
 		this.layoutmanager=true;
