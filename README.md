@@ -29,4 +29,4 @@ You set the list of available templates by setting a contentRenderer.cfc this.la
 
 * admindomain=localhost
 
-# Reload Mura and test.
+## Reload Mura and test.
