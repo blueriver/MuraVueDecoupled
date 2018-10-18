@@ -111,3 +111,4 @@ tracksessioninnewthread=true
 usedefaultsmtpserver=true
 usefilemode=false
 windowdocumentdomain=
+externalConfig=

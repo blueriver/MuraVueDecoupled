@@ -4,14 +4,7 @@ import Router from 'vue-router'
 import ContentNode from '@/components/ContentNode'
 import Mura from "mura.js"
 
-Mura.init({
-	rootpath:"http://localhost:8888",
-	siteid:"default"
-});
-
-Mura.loader()
-	.loadcss(Mura.corepath + '/modules/v1/core_assets/css/mura.7.1.min.css')
-	.loadcss(Mura.corepath + '/modules/v1/core_assets/css/mura.7.1.skin.css');
+require("../mura.config.js")
 
 Vue.use(Router)
 
@@ -20,7 +13,7 @@ const routes = [
 	component: ContentNode,
 	props: {Mura:Mura}
 	}
-];
+]
 
 const router= new Router({
 	routes:routes}

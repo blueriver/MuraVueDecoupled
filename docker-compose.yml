@@ -9,7 +9,7 @@ services:
     volumes:
         - db_data:/var/lib/mysql
     ports:
-        - "55555:3306"
+        - "55556:3306"
 
   #Mura Service
   mura:
@@ -30,12 +30,15 @@ services:
       MURA_DBPORT: 3306
       MURA_SITEIDINURLS: "false"
       MURA_INDEXFILEINURLS: "false"
+      MURA_EXTERNALCONFIG: http://vue:8080/mura.config.json
     volumes:
         - ./Mura/app/config:/var/www/config
         - ./Mura/app/plugins:/var/www/plugins
         - ./Mura/app/themes:/var/www/themes
         - ./Mura/app/etc:/var/www/etc
         - ./Mura/app/sites:/var/www/sites
+        - ../7.1/core:/var/www/core
+        - ../7.1/admin:/var/www/admin
     ports:
         - "8888:8888"
     healthcheck:
@@ -47,8 +50,6 @@ services:
       - mura
     build: ./Vue
     command: npm run serve
-    environment:
-      HOST: 0.0.0.0
     volumes:
       - ./Vue:/usr/app/
       -  node_modules:/usr/app/node_modules
