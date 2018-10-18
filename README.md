@@ -2,7 +2,7 @@
 
 ## Inital Startup
 
-You will first need to go to localhost:8888 to initialize Mura's install then login and edit the default sites settings:
+You will first need to go to localhost:8888 to initialize Mura's install then login and edit the default site's settings:
 * Domain= The domain of the remote site that the the content will be served on. (localhost)
 * Is Remote = true
 * Remote Context = The directory structure off of the remote site's web root that the site lives (Leave Empty)
