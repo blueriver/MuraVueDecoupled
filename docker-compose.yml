@@ -37,8 +37,8 @@ services:
         - ./Mura/app/themes:/var/www/themes
         - ./Mura/app/etc:/var/www/etc
         - ./Mura/app/sites:/var/www/sites
-        - ../7.1/core:/var/www/core
-        - ../7.1/admin:/var/www/admin
+        #- ../7.1/core:/var/www/core
+        #- ../7.1/admin:/var/www/admin
     ports:
         - "8888:8888"
     healthcheck:
