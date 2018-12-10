@@ -31,7 +31,9 @@ services:
       MURA_SITEIDINURLS: "false"
       MURA_INDEXFILEINURLS: "false"
       MURA_EXTERNALCONFIG: http://vue:8080/mura.config.json
+      MURA_DEFAULTTHEMEURL: https://github.com/blueriver/MuraMinimal/archive/master.zip
     volumes:
+        - ../7.1/core:/var/www/core
         - ./Mura/app/config:/var/www/config
         - ./Mura/app/plugins:/var/www/plugins
         - ./Mura/app/themes:/var/www/themes
