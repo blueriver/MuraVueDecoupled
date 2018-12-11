@@ -1,0 +1,24 @@
+{
+	"global":{
+		"rendererProperties":{
+			"templateArray":["Default"],
+			"hashurls":true
+		},
+		"modules":{
+			"example":{
+				"name":"My Module",
+				"contenttypes":"*"
+			}
+		},
+	"sites":{
+		"default":{
+			"rendererProperties":{
+
+			},
+			"modules":{
+
+			}
+		}
+	}
+	}
+}

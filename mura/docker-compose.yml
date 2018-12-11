@@ -1,0 +1,50 @@
+version: "3.5"
+services:
+  #MySQL Service
+  db:
+    image: mysql:5.7
+    environment:
+        MYSQL_ROOT_PASSWORD: NOT_SECURE_CHANGE
+        MYSQL_DATABASE: muradb
+    volumes:
+        - mura_vue_decoupled_db_data:/var/lib/mysql
+    ports:
+        - "55556:3306"
+
+  #Mura Service
+  mura:
+    depends_on:
+      - db
+    build:
+      context: .
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: admin
+      MURA_ADMINEMAIL: example@localhost.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: muradb
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: mysql
+      MURA_DBUSERNAME: root
+      MURA_DBPASSWORD: NOT_SECURE_CHANGE
+      MURA_DBHOST: db
+      MURA_DBPORT: 3306
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "false"
+      MURA_EXTERNALCONFIG: "http://host.docker.internal:8080/mura.config.json"
+      MURA_DEFAULTTHEMEURL: https://github.com/blueriver/MuraMinimal/archive/master.zip
+    volumes:
+        # - ../7.1/core:/var/www/core
+        - mura_vue_decoupled_plugins:/var/www/plugins
+        - mura_vue_decoupled_themes:/var/www/themes
+        - mura_vue_decoupled_sites:/var/www/sites
+    ports:
+        - "8888:8888"
+    healthcheck:
+      disable: true
+
+volumes:
+  mura_vue_decoupled_db_data:
+  mura_vue_decoupled_plugins:
+  mura_vue_decoupled_themes:
+  mura_vue_decoupled_sites:
