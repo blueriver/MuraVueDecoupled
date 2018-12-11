@@ -1,0 +1,27 @@
+# Mura CMS root/.gitignore
+# ---------------------------------------------
+
+# ignored file extensions & system directories
+*~
+*_notes/
+*.codekit
+*.esproj
+*.less.css
+*.log
+*.sublime-project
+*.sublime-workspace
+
+# ignored '.' files and directories
+._*
+.cache
+.DS_Store
+.htaccess
+.project
+.rdsTempFiles
+.sass-cache
+.settings
+.tmproj
+.svn
+*/node_modules
+*/sftp-config.json
+vue/public/mura.config.json
