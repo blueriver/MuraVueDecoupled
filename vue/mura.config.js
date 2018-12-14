@@ -22,9 +22,14 @@ Mura.Module.example=Mura.UI.extend(
 		if(!container.attr('id')){
 			container.attr('id','mc' + this.context.instanceid);
 		}
-		const ExampleCtor = Vue.extend(Example)
-		const ExampleInstance = new ExampleCtor({ propsData: { context: this.context } })
-		ExampleInstance.$mount('#' + container.attr('id'))
+	
+		new Vue(
+			Object.assign({},
+				Example,
+				{
+		  		propsData:{ context: this.context }
+				})
+		).$mount('#' + container.attr('id'))
 
 
 		this.trigger('afterRender');
