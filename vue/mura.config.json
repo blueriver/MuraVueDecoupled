@@ -2,7 +2,8 @@
 	"global":{
 		"rendererProperties":{
 			"templateArray":["Default"],
-			"hashurls":false
+			"hashurls":false,
+			"primaryContentTypes":"Page,Link,File"
 		},
 		"modules":{
 			"example":{
