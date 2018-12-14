@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Router from 'vue-router'
-import ContentNode from '@/components/ContentNode'
+import ContentDefault from '@/components/content/Default'
 import Mura from "mura.js"
 
 require("../mura.config.js")
@@ -10,12 +10,13 @@ Vue.use(Router)
 
 const routes = [
   { path: '*',
-	component: ContentNode,
+	component: ContentDefault,
 	props: {Mura:Mura}
 	}
 ]
- 
+
 const router= new Router({
+	mode: 'history',
 	routes:routes}
 )
 

@@ -23,5 +23,5 @@
 .tmproj
 .svn
 */node_modules
-*/sftp-config.json
-vue/public/mura.config.json
+
+sftp-config.json

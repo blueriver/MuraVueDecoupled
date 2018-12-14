@@ -3,7 +3,8 @@ import Mura from "mura.js";
 Mura.init({
 	rootpath:"http://localhost:8888",
 	siteid:"default",
-	queueObjects:false
+	queueObjects:false,
+	processMarkup:false
 });
 
 Mura.loader()

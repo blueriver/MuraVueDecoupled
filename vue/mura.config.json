@@ -2,12 +2,13 @@
 	"global":{
 		"rendererProperties":{
 			"templateArray":["Default"],
-			"hashurls":true
+			"hashurls":false
 		},
 		"modules":{
 			"example":{
 				"name":"My Module",
-				"contenttypes":"*"
+				"contenttypes":"*",
+				"configurator":"<div class=mura-control-group\">\r\n<label>Example Variable<\/label>\r\n<input type=\"text\" name=\"myvar\" class=\"objectParam\"\/>\r\n<\/div>"
 			}
 		},
 	"sites":{

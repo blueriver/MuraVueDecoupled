@@ -34,7 +34,8 @@ services:
       MURA_EXTERNALCONFIG: "http://host.docker.internal:8080/mura.config.json"
       MURA_DEFAULTTHEMEURL: https://github.com/blueriver/MuraMinimal/archive/master.zip
     volumes:
-        # - ../7.1/core:/var/www/core
+        # - ../../7.1/core:/var/www/core
+        - ../../7.1/admin:/var/www/admin
         - mura_vue_decoupled_plugins:/var/www/plugins
         - mura_vue_decoupled_themes:/var/www/themes
         - mura_vue_decoupled_sites:/var/www/sites
