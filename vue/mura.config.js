@@ -16,13 +16,13 @@ Mura.loader()
 Mura.Module.example=Mura.UI.extend(
  {
 	render:function(){
-		//let response=this.context.myvar || 'Enter example variable in configurator';
-		//Mura(this.context.targetEl).html(response);
+
 		const container=Mura(this.context.targetEl)
+
 		if(!container.attr('id')){
 			container.attr('id','mc' + this.context.instanceid);
 		}
-	
+
 		new Vue(
 			Object.assign({},
 				Example,
@@ -30,7 +30,6 @@ Mura.Module.example=Mura.UI.extend(
 		  		propsData:{ context: this.context }
 				})
 		).$mount('#' + container.attr('id'))
-
 
 		this.trigger('afterRender');
 	}
