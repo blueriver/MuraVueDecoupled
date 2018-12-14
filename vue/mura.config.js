@@ -14,7 +14,8 @@ Mura.loader()
 Mura.Module.example=Mura.UI.extend(
  {
 	render:function(){
-		Mura(this.context.targetEl).html('Hello!');
+		let response=this.context.myvar || 'Enter example variable in configurator';
+		Mura(this.context.targetEl).html(response);
 		this.trigger('afterRender');
 	}
 });
