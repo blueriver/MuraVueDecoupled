@@ -17,7 +17,7 @@ export default {
 	},
 	methods: {
 		render:function(){
-			this.Mura('#html-queue').hide().html(this.content.get('htmlheadqueue') + this.content.get('htmlfootqueue')).show();
+	
 		}
 	},
 }
