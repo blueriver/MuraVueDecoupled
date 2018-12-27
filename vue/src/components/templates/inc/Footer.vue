@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'footer_template',
+	name: 'footer_template',
 	props: ['content','Mura'],
 	mounted:function(){
 		this.render();
@@ -17,7 +17,7 @@ export default {
 	},
 	methods: {
 		render:function(){
-	
+
 		}
 	},
 }
