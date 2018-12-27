@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'example',
+	name: 'example',
 	props: ['context']
 }
 </script>

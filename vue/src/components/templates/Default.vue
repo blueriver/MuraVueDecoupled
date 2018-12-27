@@ -26,9 +26,9 @@ export default {
 		}
 	},
 	components: {
-      HeaderTemplate,
-			FooterTemplate,
-			DefaultContentTypeTemplate
+		HeaderTemplate,
+		FooterTemplate,
+		DefaultContentTypeTemplate
   }
 }
 </script>

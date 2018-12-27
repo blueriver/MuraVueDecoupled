@@ -35,7 +35,7 @@ ul.primarynav li a:hover {
 	<div v-if="primaryNav">
 		<ul title="Primary Navigtion" class="primarynav" v-if="primaryNav">
 			<li v-for="item of primaryNav">
-		      <a :href="item.url">{{item.menutitle}}</a>
+					<a :href="item.url">{{item.menutitle}}</a>
 			</li>
 		</ul>
 	</div>
@@ -43,7 +43,7 @@ ul.primarynav li a:hover {
 
 <script>
 export default {
-  name: 'header_template',
+	name: 'header_template',
 	props: ['content','Mura'],
 	mounted:function(){
 		this.render();
