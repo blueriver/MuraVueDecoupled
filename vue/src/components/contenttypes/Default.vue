@@ -64,7 +64,7 @@ export default {
 			this.Mura('#content-body').html(this.content.get('body'));
 			this.Mura('.mura-region-container').each(
 			(region)=>{
-					region=Mura(region);
+					region=this.Mura(region);
 					region.html(
 						this.content.renderDisplayRegion(region.data('region'))
 					)
