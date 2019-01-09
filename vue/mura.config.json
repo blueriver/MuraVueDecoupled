@@ -2,7 +2,7 @@
 	"global":{
 		"rendererProperties":{
 			"templateArray":["Default"],
-			"collectionLayoutArray":["CollectionLayout"],
+			"collectionLayoutArray":["VueCollectionLayout"],
 			"hashurls":false,
 			"primaryContentTypes":"Page,Link,File"
 		},
@@ -12,7 +12,7 @@
 				"contenttypes":"*",
 				"configurator":"<div class=mura-control-group\">\r\n<label>Example Variable<\/label>\r\n<input type=\"text\" name=\"myvar\" class=\"objectParam\"\/>\r\n<\/div>"
 			},
-			"CollectionLayout":{
+			"VueCollectionLayout":{
 				"name":"Default Collection Component",
 				"contenttypes":"",
 				"configurator":""
