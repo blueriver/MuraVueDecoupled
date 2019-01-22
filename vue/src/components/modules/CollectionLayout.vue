@@ -1,8 +1,8 @@
 <template>
 	<div>
 	<ul>
-		<li v-for="item in context.collection.getAll().items">
-			<a v-bind:href="item.url">{{item.menutitle}}</a>
+		<li v-for="item in context.collection.get('items')">
+			<a v-bind:href="item.get('url')">{{item.get('menutitle')}}</a>
 		</li>
 	</ul>
 	<button v-if="context.collection.has('first')"  v-on:click="goToPage('first')">First</button>
@@ -13,8 +13,6 @@
 </template>
 
 <script>
-
-import Mura from 'mura.js'
 
 export default {
 	name: 'collection-layout',
