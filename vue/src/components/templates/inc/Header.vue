@@ -34,7 +34,7 @@ ul.primarynav li a:hover {
 <template>
 	<div v-if="primaryNav">
 		<ul title="Primary Navigtion" class="primarynav" v-if="primaryNav">
-			<li v-for="item of primaryNav">
+			<li v-for="item of primaryNav" :key="item.contentid">
 					<a v-bind:href="item.url">{{item.menutitle}}</a>
 			</li>
 		</ul>
